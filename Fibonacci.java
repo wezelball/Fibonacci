@@ -1,4 +1,4 @@
-*
+/*
 This is a practice solution to a problem in Project Euler
 
 1000-digit Fibonacci number
@@ -27,6 +27,13 @@ The 12th term, F12, is the first term to contain three digits.
 What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
 
 Solution
+
+The first thing to do would be to create a method to return the Fibonacci value of the 
+number. That number could be converted to a string, and the length checked.  If the 
+length < 1000, increment a counter and repeat.
+
+This is a brute-force method, but that's okay!
+
 */
 
 public class Fibonacci {
