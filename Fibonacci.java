@@ -1,5 +1,5 @@
-# Fibonacci
-Problem #25 on Project Euler website, implemented in JAVA
+*
+This is a practice solution to a problem in Project Euler
 
 1000-digit Fibonacci number
 Problem 25
@@ -25,3 +25,10 @@ Hence the first 12 terms will be:
 
 The 12th term, F12, is the first term to contain three digits.
 What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
+
+Solution
+*/
+
+public class Fibonacci {
+    
+}
