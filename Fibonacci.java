@@ -13,18 +13,12 @@ public class Fibonacci {
     {
         //int sum = 0;
 
-        if (number < 0) {
-            System.out.println("Invalid number, can't solve.");
-            return -1;
-        }
-        else if (number == 1)   {
-            return 1;
-        }
-        else if (number == 0) {
-            return 0;
+        if (number <= 1) {
+            return number;
         }
         else {
-            return (number-1 + number-2);
+            // recursive call
+            return (getFibonacci(number-1) + getFibonacci(number-2));
         }
     }
 }
