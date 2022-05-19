@@ -4,38 +4,27 @@ This is a practice solution to a problem in Project Euler
 1000-digit Fibonacci number
 Problem 25
 
-The Fibonacci sequence is defined by the recurrence relation:
-
-    Fn = Fn−1 + Fn−2, where F1 = 1 and F2 = 1.
-
-Hence the first 12 terms will be:
-
-    F1 = 1
-    F2 = 1
-    F3 = 2
-    F4 = 3
-    F5 = 5
-    F6 = 8
-    F7 = 13
-    F8 = 21
-    F9 = 34
-    F10 = 55
-    F11 = 89
-    F12 = 144
-
-The 12th term, F12, is the first term to contain three digits.
-What is the index of the first term in the Fibonacci sequence to contain 1000 digits?
-
-Solution
-
-The first thing to do would be to create a method to return the Fibonacci value of the 
-number. That number could be converted to a string, and the length checked.  If the 
-length < 1000, increment a counter and repeat.
-
-This is a brute-force method, but that's okay!
-
 */
 
 public class Fibonacci {
-    
+
+    // Reuturn a Fibonacci number
+    public int getFibonacci(int number)
+    {
+        //int sum = 0;
+
+        if (number < 0) {
+            System.out.println("Invalid number, can't solve.");
+            return -1;
+        }
+        else if (number == 1)   {
+            return 1;
+        }
+        else if (number == 0) {
+            return 0;
+        }
+        else {
+            return (number-1 + number-2);
+        }
+    }
 }
